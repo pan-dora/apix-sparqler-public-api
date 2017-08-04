@@ -1,15 +1,18 @@
-JSONLD-Framer
+APIX-SPARQLER-public-api
 ======
 
-A basic service that can frame JSON-LD document sources.
+A basic node js app that reads and serializes a response from the [APIX-Sparqler](https://github.com/pan-dora/apix-sparqler) service.
+
+It performs two functions:
+1. (re)compacts the framed response to remove `@graph` from the manifest Map using the modified javascript jsonld library.
+2. rewrites and simplifies the APIX-SPARQLER request URI.
 
 Example:
 
-Define API source document base and frame URIs in config/default.json:
+Define API source document base in config/default.json:
 ```json
 "iiif": {
     "service": "http://localhost:9104/sparqler?type=manifest&node=http://localhost:8080/fcrepo/rest/collection/",
-    "frame": "http://localhost:3000/frame.json",
   },
 ```  
  Start service:

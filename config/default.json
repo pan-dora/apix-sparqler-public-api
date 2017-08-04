@@ -2,26 +2,10 @@
   "endpoints": {
     "system": {
       "scheme": "http",
-      "hostname": "localhost",
-      "port": "8080",
-      "user": "user",
-      "password": "password",
-      "queryPath": "/fuseki/fcrepo/query",
-      "updatePath": "/fuseki/fcrepo/update",
-      "queryParameterName": "query",
-      "updateParameterName": "update",
       "headers": {}
     },
     "default": {
       "scheme": "http",
-      "hostname": "localhost",
-      "port": "8080",
-      "user": "user",
-      "password": "password",
-      "queryPath": "/fuseki/fcrepo/query",
-      "updatePath": "/fuseki/fcrepo/update",
-      "queryParameterName": "query",
-      "updateParameterName": "update",
       "headers": {}
     }
   },

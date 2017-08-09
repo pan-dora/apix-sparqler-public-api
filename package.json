@@ -1,6 +1,6 @@
 {
   "name": "apix-sparqler-public-api",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -16,6 +16,7 @@
     "morgan": "~1.8.1",
     "pkginfo": "^0.4.0",
     "pug": "~2.0.0-beta11",
+    "redis": "^2.8.0",
     "request": "*",
     "serve-favicon": "~2.4.2"
   }

@@ -3,9 +3,10 @@ APIX-SPARQLER-public-api
 
 A basic node js app that reads and serializes a response from the [APIX-Sparqler](https://github.com/pan-dora/apix-sparqler) service.
 
-It performs two functions:
+It performs three functions:
 1. (re)compacts the framed response to remove `@graph` from the manifest Map using the modified javascript jsonld library.
 2. rewrites and simplifies the APIX-SPARQLER request URI.
+3. uses the redis client to cache query responses.  
 
 Example:
 

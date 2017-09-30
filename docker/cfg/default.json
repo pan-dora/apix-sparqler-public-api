@@ -9,7 +9,7 @@
       "ask": "application/sparql-results+json",
       "update": "text/html"
     },
-    "hostname": "localhost",
+    "hostname": "apix-sparqler-public-api",
     "port": 3000,
     "maxQueryLength": 4000
   },
@@ -25,13 +25,13 @@
   },
   "iiif": {
     "context": "http://localhost:3000/context.json",
-    "service": "http://localhost:9104/sparqler?type=manifest&node=http://localhost:8080/fcrepo/rest/collection/",
+    "service": "http://exts-sparqler:9104/sparqler?type=manifest&node=http://localhost:8080/fcrepo/rest/collection/",
     "frame": "http://localhost:3000/frame.json",
     "listframe": "http://localhost:3000/listframe.json",
     "listsearchframe": "http://localhost:3000/listsearchframe.json",
     "pageframe": "http://localhost:3000/pageframe.json"
   },
   "redis": {
-    "server": "172.17.0.4"
+    "server": "redis"
   }
 }
